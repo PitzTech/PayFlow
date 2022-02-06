@@ -8,7 +8,8 @@ class LoginPage extends StatefulWidget {
   const LoginPage({Key? key}) : super(key: key);
 
   @override
-  _LoginPageState createState() => _LoginPageState();
+  _LoginPageState createState() =>
+      _LoginPageState();
 }
 
 class _LoginPageState extends State<LoginPage> {
@@ -34,11 +35,14 @@ class _LoginPageState extends State<LoginPage> {
                   child: Container(
                     alignment: Alignment.center,
                     constraints: BoxConstraints(
-                      maxHeight: size.height * .5,
+                      maxHeight:
+                          size.height * .5,
                     ),
                     child: AspectRatio(
                       aspectRatio: 202 / 363,
-                      child: Image.asset(AppImages.person, fit: BoxFit.fill),
+                      child: Image.asset(
+                          AppImages.person,
+                          fit: BoxFit.fill),
                     ),
                   )),
               Positioned(
@@ -46,16 +50,20 @@ class _LoginPageState extends State<LoginPage> {
                 left: 0,
                 right: 0,
                 child: Column(children: [
-                  Image.asset(AppImages.logomini),
+                  Image.asset(
+                      AppImages.logomini),
                   Padding(
                     padding: EdgeInsets.only(
                         top: size.height * .03,
                         left: size.width * .18,
-                        right: size.width * .18),
+                        right:
+                            size.width * .18),
                     child: Text(
                       "Organize seus boletos em um só lugar",
-                      textAlign: TextAlign.center,
-                      style: TextStyles.titleHome,
+                      textAlign:
+                          TextAlign.center,
+                      style:
+                          TextStyles.titleHome,
                     ),
                   ),
                   Padding(
@@ -64,7 +72,8 @@ class _LoginPageState extends State<LoginPage> {
                         left: size.width * .1,
                         right: size.width * .1),
                     child: SocialLoginButton(
-                      onTap: () => print("clicked"),
+                      onTap: () =>
+                          print("clicked"),
                     ),
                   )
                 ]),
